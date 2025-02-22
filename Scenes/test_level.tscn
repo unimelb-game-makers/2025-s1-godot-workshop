@@ -7,19 +7,21 @@
 [node name="Test_Level" type="Node2D"]
 
 [node name="World" type="StaticBody2D" parent="."]
+position = Vector2(240, 200)
+metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="World"]
-position = Vector2(548, 428)
 texture = ExtResource("1_02glg")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="World"]
+position = Vector2(-548, -428)
 polygon = PackedVector2Array(356, 396, 308, 396, 308, 588, 788, 588, 788, 476, 756, 476, 756, 524, 740, 524, 740, 540, 708, 540, 708, 524, 676, 524, 676, 508, 660, 508, 660, 492, 532, 492, 532, 508, 452, 508, 452, 524, 356, 524)
 
 [node name="Player" parent="." instance=ExtResource("2_fyljc")]
-position = Vector2(564, 458)
+position = Vector2(252, 235)
 
 [node name="Rock Enemy" parent="." instance=ExtResource("3_4xe0l")]
-position = Vector2(403, 497)
+position = Vector2(91, 274)
 
 [node name="Rock Enemy2" parent="." instance=ExtResource("3_4xe0l")]
-position = Vector2(768, 450)
+position = Vector2(456, 227)
