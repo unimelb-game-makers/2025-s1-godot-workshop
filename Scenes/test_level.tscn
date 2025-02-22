@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://dsayifqv0j8wk"]
+
+[ext_resource type="Texture2D" uid="uid://dy4hmogighlb3" path="res://Resources/Level/Test Level.png" id="1_02glg"]
+
+[node name="Test_Level" type="Node2D"]
+
+[node name="World" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="World"]
+position = Vector2(548, 428)
+texture = ExtResource("1_02glg")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="World"]
+polygon = PackedVector2Array(356, 396, 308, 396, 308, 588, 788, 588, 788, 476, 756, 476, 756, 524, 740, 524, 740, 540, 708, 540, 708, 524, 676, 524, 676, 508, 660, 508, 660, 492, 532, 492, 532, 508, 452, 508, 452, 524, 356, 524)
