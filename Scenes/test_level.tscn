@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://dsayifqv0j8wk"]
+[gd_scene load_steps=4 format=3 uid="uid://dsayifqv0j8wk"]
 
 [ext_resource type="Texture2D" uid="uid://dy4hmogighlb3" path="res://Resources/Level/Test Level.png" id="1_02glg"]
+[ext_resource type="PackedScene" uid="uid://cswqby3b5lqm7" path="res://Scenes/player.tscn" id="2_fyljc"]
+[ext_resource type="PackedScene" uid="uid://cpklxrdgvh2qm" path="res://Scenes/rock_enemy.tscn" id="3_4xe0l"]
 
 [node name="Test_Level" type="Node2D"]
 
@@ -12,3 +14,12 @@ texture = ExtResource("1_02glg")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="World"]
 polygon = PackedVector2Array(356, 396, 308, 396, 308, 588, 788, 588, 788, 476, 756, 476, 756, 524, 740, 524, 740, 540, 708, 540, 708, 524, 676, 524, 676, 508, 660, 508, 660, 492, 532, 492, 532, 508, 452, 508, 452, 524, 356, 524)
+
+[node name="Player" parent="." instance=ExtResource("2_fyljc")]
+position = Vector2(564, 458)
+
+[node name="Rock Enemy" parent="." instance=ExtResource("3_4xe0l")]
+position = Vector2(403, 497)
+
+[node name="Rock Enemy2" parent="." instance=ExtResource("3_4xe0l")]
+position = Vector2(768, 450)
