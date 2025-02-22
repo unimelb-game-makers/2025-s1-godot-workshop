@@ -24,4 +24,4 @@ position = Vector2(252, 235)
 position = Vector2(91, 274)
 
 [node name="Rock Enemy2" parent="." instance=ExtResource("3_4xe0l")]
-position = Vector2(456, 227)
+position = Vector2(399, 229)
