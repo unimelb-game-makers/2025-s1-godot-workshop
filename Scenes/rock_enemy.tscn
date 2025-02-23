@@ -11,7 +11,7 @@ radius = 15.0
 
 [node name="Rock Enemy" type="CharacterBody2D"]
 collision_layer = 2
-collision_mask = 4
+collision_mask = 7
 script = ExtResource("1_n8jnp")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -28,3 +28,5 @@ collision_layer = 0
 position = Vector2(0, 2)
 shape = SubResource("CircleShape2D_wyd3s")
 debug_color = Color(0.944842, 0.186226, 0.372715, 0.42)
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
