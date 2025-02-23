@@ -21,6 +21,12 @@ window/size/viewport_width=480
 window/size/viewport_height=360
 window/stretch/mode="viewport"
 
+[layer_names]
+
+2d_physics/layer_1="Player"
+2d_physics/layer_2="Enemy"
+2d_physics/layer_3="World"
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
