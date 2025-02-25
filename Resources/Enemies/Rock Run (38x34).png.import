@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3w76ds66b0a1"
-path="res://.godot/imported/Duck.png-b4e5efedfc8da87e2aeef2dba31c31fb.ctex"
+uid="uid://basdhmjxe2sbh"
+path="res://.godot/imported/Rock Run (38x34).png-93d304189d305fdaff08d9b6e4527a24.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Enemies/Duck.png"
-dest_files=["res://.godot/imported/Duck.png-b4e5efedfc8da87e2aeef2dba31c31fb.ctex"]
+source_file="res://Resources/Enemies/Rock Run (38x34).png"
+dest_files=["res://.godot/imported/Rock Run (38x34).png-93d304189d305fdaff08d9b6e4527a24.ctex"]
 
 [params]
 

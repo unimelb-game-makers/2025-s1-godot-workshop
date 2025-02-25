@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://73v6piuyi7pw"
-path="res://.godot/imported/Ghost.png-ade3b141641494189e540a458d25ed96.ctex"
+uid="uid://dpeuc5bshspbt"
+path="res://.godot/imported/Bullet Pieces (16x16).png-f691c81b2d123cb5ea26f13f0f69229c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Enemies/Ghost.png"
-dest_files=["res://.godot/imported/Ghost.png-ade3b141641494189e540a458d25ed96.ctex"]
+source_file="res://Resources/Character/Bullet Pieces (16x16).png"
+dest_files=["res://.godot/imported/Bullet Pieces (16x16).png-f691c81b2d123cb5ea26f13f0f69229c.ctex"]
 
 [params]
 

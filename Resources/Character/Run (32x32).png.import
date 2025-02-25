@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://df0ohjtvqfnuu"
-path="res://.godot/imported/Bird.png-b1fb9e23ea7c6243b09418e712311303.ctex"
+uid="uid://dawqn1aqfe0pf"
+path="res://.godot/imported/Run (32x32).png-f0e6e552ac852fa86b3758577d492f82.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Enemies/Bird.png"
-dest_files=["res://.godot/imported/Bird.png-b1fb9e23ea7c6243b09418e712311303.ctex"]
+source_file="res://Resources/Character/Run (32x32).png"
+dest_files=["res://.godot/imported/Run (32x32).png-f0e6e552ac852fa86b3758577d492f82.ctex"]
 
 [params]
 
