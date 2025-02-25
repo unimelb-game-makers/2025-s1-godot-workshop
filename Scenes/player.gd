@@ -6,6 +6,8 @@ const JUMP_VELOCITY : float = -200.0
 
 @onready var sprite : Sprite2D = $Sprite2D
 
+@export var health : int = 10
+
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -29,3 +31,12 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+
+
+func damage(value:int) -> void:
+	health -= value
+	if health < 0:
+		print("Game over")
+		queue_free()
+	else:
+		print(health)

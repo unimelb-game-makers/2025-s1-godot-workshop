@@ -23,7 +23,10 @@ polygon = PackedVector2Array(356, 396, 308, 396, 308, 588, 788, 588, 788, 476, 7
 position = Vector2(252, 235)
 
 [node name="Rock Enemy" parent="." instance=ExtResource("3_4xe0l")]
-position = Vector2(91, 274)
+position = Vector2(414, 260)
 
 [node name="Rock Enemy2" parent="." instance=ExtResource("3_4xe0l")]
-position = Vector2(399, 229)
+modulate = Color(1, 0.584314, 0.588235, 1)
+position = Vector2(86, 242)
+scale = Vector2(1.31, 1.31)
+attack_damage = 4

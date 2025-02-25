@@ -4,6 +4,8 @@ extends CharacterBody2D
 var speed:float = 50
 var direction_x:float = 1
 
+@export var attack_damage : int = 2
+
 #Runs every frame
 func _physics_process(delta: float) -> void:
 	#Redirect direction on collision
@@ -21,5 +23,6 @@ func _physics_process(delta: float) -> void:
 
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
-	print("Player damaged")
+	#print("Player damaged")
 	#queue_free()
+	body.damage(attack_damage)
