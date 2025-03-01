@@ -4,6 +4,7 @@ extends CharacterBody2D
 var speed:float = 50
 var direction_x:float = 1
 
+@export var health : int = 3
 @export var attack_damage : int = 2
 
 #Runs every frame
@@ -26,3 +27,8 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 	#print("Player damaged")
 	#queue_free()
 	body.damage(attack_damage)
+
+func damage(value:int) -> void:
+	health -= value
+	if health <= 0:
+		queue_free()
