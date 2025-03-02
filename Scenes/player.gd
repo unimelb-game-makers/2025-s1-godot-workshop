@@ -68,5 +68,5 @@ func shoot() -> void:
 		new_bullet.direction = Vector2.RIGHT
 		
 	# Spawns the bullet into the root scene the player is in
-	get_tree().root.add_child(new_bullet)
+	get_parent().add_child(new_bullet)
 	pass
