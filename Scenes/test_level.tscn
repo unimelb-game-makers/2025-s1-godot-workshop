@@ -32,3 +32,9 @@ modulate = Color(1, 0.584314, 0.588235, 1)
 position = Vector2(86, 242)
 scale = Vector2(1.31, 1.31)
 attack_damage = 4
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 1.16
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

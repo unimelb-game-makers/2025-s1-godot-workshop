@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 # Base Values for Bullet
-var speed : float = 50
+var speed : float = 100
 var damage : int = 1
 
 # Direction is set to 0 so it can be modified in other scripts
