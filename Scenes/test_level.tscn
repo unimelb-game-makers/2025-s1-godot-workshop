@@ -37,7 +37,7 @@ scale = Vector2(1.31, 1.31)
 attack_damage = 4
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 1.16
+wait_time = 4.945
 autostart = true
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]

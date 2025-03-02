@@ -4,6 +4,9 @@ extends CharacterBody2D
 var speed:float = 50
 var direction_x:float = 1
 
+# Get sprite to face direction
+@onready var sprite := $Sprite2D
+
 # @export allows a value to be adjusted in the "inspector" panel in Godot.
 @export var health : int = 3
 @export var attack_damage : int = 2
@@ -17,6 +20,9 @@ func _physics_process(delta: float) -> void:
 	#Add Gravity
 	if not is_on_floor():
 		velocity += get_gravity() * delta
+	
+	#Face Direction
+	sprite.flip_h = not (direction_x < 0)
 	
 	#Move
 	velocity.x = speed * direction_x

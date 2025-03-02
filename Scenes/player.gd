@@ -7,7 +7,7 @@ const JUMP_VELOCITY : float = -200.0
 # "Calls" a child of this node so its parameters can be directly adjusted
 # @onready tells the script to assign this value when this scene is initialised;
 # A scene cannot access it's children before it is initialised
-@onready var sprite : Sprite2D = $Sprite2D
+@onready var sprite := $AnimatedSprite2D
 
 # @export allows a value to be adjusted in the "inspector" panel in Godot.
 @export var health : int = 10
@@ -36,12 +36,14 @@ func _physics_process(delta: float) -> void:
 	if direction:
 		velocity.x = direction * SPEED
 		# Flip sprite based on direction
+		sprite.animation = "Run"
 		if direction > 0: # Right
 			sprite.flip_h = false
 		elif direction < 0: # Left
 			sprite.flip_h = true
 	# Deceleration if no input button is pressed
 	else:
+		sprite.animation = "Idle"
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	# Function to move player
