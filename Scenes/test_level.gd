@@ -15,7 +15,7 @@ func spawn_enemy() -> void:
 	new_enemy.position = new_position
 	
 	# Add to scene
-	add_child(new_enemy)
+	$"Enemy Folder".add_child(new_enemy)
 
 func _on_timer_timeout() -> void:
 	spawn_enemy()
