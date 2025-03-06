@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://doj8mcr86ufyy"
-path="res://.godot/imported/Rock Hit.png-bc9c5c759704f4b37ce9197babc237b9.ctex"
+uid="uid://basdhmjxe2sbh"
+path="res://.godot/imported/Enemy Run (38x34).png-93774aabdc9328d75527f38e4616fac8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Enemies/Rock Hit.png"
-dest_files=["res://.godot/imported/Rock Hit.png-bc9c5c759704f4b37ce9197babc237b9.ctex"]
+source_file="res://Resources/Enemies/Enemy Run (38x34).png"
+dest_files=["res://.godot/imported/Enemy Run (38x34).png-93774aabdc9328d75527f38e4616fac8.ctex"]
 
 [params]
 

@@ -1,7 +1,7 @@
 [gd_scene load_steps=20 format=3 uid="uid://cpklxrdgvh2qm"]
 
-[ext_resource type="Script" path="res://Scenes/rock_enemy.gd" id="1_n8jnp"]
-[ext_resource type="Texture2D" uid="uid://basdhmjxe2sbh" path="res://Resources/Enemies/Rock Run (38x34).png" id="2_wfj4o"]
+[ext_resource type="Script" uid="uid://c22d1xq72d0hl" path="res://Scenes/enemy.gd" id="1_n8jnp"]
+[ext_resource type="Texture2D" uid="uid://basdhmjxe2sbh" path="res://Resources/Enemies/Enemy Run (38x34).png" id="2_wfj4o"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eelh7"]
 atlas = ExtResource("2_wfj4o")
@@ -115,7 +115,7 @@ radius = 14.0
 [sub_resource type="CircleShape2D" id="CircleShape2D_wyd3s"]
 radius = 15.0
 
-[node name="Rock Enemy" type="CharacterBody2D"]
+[node name="Enemy" type="CharacterBody2D"]
 collision_layer = 2
 collision_mask = 7
 script = ExtResource("1_n8jnp")
@@ -129,12 +129,12 @@ frame_progress = 0.342569
 position = Vector2(0, 2)
 shape = SubResource("CircleShape2D_2brr3")
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="AttackArea" type="Area2D" parent="."]
 collision_layer = 0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea"]
 position = Vector2(0, 2)
 shape = SubResource("CircleShape2D_wyd3s")
 debug_color = Color(0.944842, 0.186226, 0.372715, 0.42)
 
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="AttackArea" to="." method="_on_attack_area_body_entered"]

@@ -1,40 +1,40 @@
 [gd_scene load_steps=6 format=3 uid="uid://dsayifqv0j8wk"]
 
 [ext_resource type="Texture2D" uid="uid://dy4hmogighlb3" path="res://Resources/Level/Test Level.png" id="1_02glg"]
-[ext_resource type="Script" path="res://Scenes/test_level.gd" id="1_po7eu"]
+[ext_resource type="Script" uid="uid://biwk07vowpvpk" path="res://Scenes/test_level.gd" id="1_po7eu"]
 [ext_resource type="PackedScene" uid="uid://cswqby3b5lqm7" path="res://Scenes/player.tscn" id="2_fyljc"]
-[ext_resource type="PackedScene" uid="uid://cpklxrdgvh2qm" path="res://Scenes/rock_enemy.tscn" id="3_4xe0l"]
+[ext_resource type="PackedScene" uid="uid://cpklxrdgvh2qm" path="res://Scenes/enemy.tscn" id="3_4xe0l"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eqt8t"]
 size = Vector2(12, 326)
 
-[node name="Test_Level" type="Node2D"]
+[node name="TestLevel" type="Node2D"]
 script = ExtResource("1_po7eu")
 
 [node name="World" type="StaticBody2D" parent="."]
 position = Vector2(240, 200)
 collision_layer = 4
 collision_mask = 0
-metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="World"]
+position = Vector2(0, -40)
 texture = ExtResource("1_02glg")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="World"]
-position = Vector2(-548, -428)
+position = Vector2(-548, -468)
 polygon = PackedVector2Array(356, 396, 308, 396, 308, 588, 788, 588, 788, 476, 756, 476, 756, 524, 740, 524, 740, 540, 708, 540, 708, 524, 676, 524, 676, 508, 660, 508, 660, 492, 532, 492, 532, 508, 452, 508, 452, 524, 356, 524)
 
 [node name="Player" parent="." instance=ExtResource("2_fyljc")]
-position = Vector2(252, 235)
+position = Vector2(252, 200)
 
-[node name="Enemy Folder" type="Node2D" parent="."]
+[node name="EnemyFolder" type="Node2D" parent="."]
 
-[node name="Rock Enemy" parent="Enemy Folder" instance=ExtResource("3_4xe0l")]
-position = Vector2(414, 260)
+[node name="Enemy" parent="EnemyFolder" instance=ExtResource("3_4xe0l")]
+position = Vector2(414, 237)
 
-[node name="Rock Enemy2" parent="Enemy Folder" instance=ExtResource("3_4xe0l")]
+[node name="Enemy2" parent="EnemyFolder" instance=ExtResource("3_4xe0l")]
 modulate = Color(1, 0.584314, 0.588235, 1)
-position = Vector2(86, 242)
+position = Vector2(86, 219)
 scale = Vector2(1.31, 1.31)
 attack_damage = 4
 
@@ -42,19 +42,21 @@ attack_damage = 4
 wait_time = 4.945
 autostart = true
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
+[node name="Borders" type="Node2D" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Borders"]
 collision_layer = 4
 collision_mask = 0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/StaticBody2D"]
 position = Vector2(480, 145)
 shape = SubResource("RectangleShape2D_eqt8t")
 
-[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+[node name="StaticBody2D2" type="StaticBody2D" parent="Borders"]
 collision_layer = 4
 collision_mask = 0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/StaticBody2D2"]
 position = Vector2(0, 165)
 shape = SubResource("RectangleShape2D_eqt8t")
 
